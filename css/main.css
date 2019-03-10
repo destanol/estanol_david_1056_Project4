@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+/* At mobile size (remember mobile first)
+- The columns should stack and be full width.
+- Columns 3 and 4 should be hidden
+- Column 1 should be pink
+- Column 2 be red */
+
+#container
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.block
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.block1
+{
+	background-color:pink;
+}
+.block2
+
+{
+	background-color:red;
+}
+.block3
+{
+	display: none;
+}
+.block4
+{
+	display: none;
+}
+
+/* At 641px the page will have 4 columns, equal width and display side by side.
+Column 1 - blue, Column 2 - purple, Column 3 - grey, Column 4-brown. 
+The site should not expand beyond 1140px */
+
+@media screen 
+  and (min-device-width: 641px){
+
+	#container
+	{	display: flex;
+		align-items: center;
+		justify-content: center;	
+		flex-flow: row nowrap;
+		width: 1140px;
+	}
+	
+	.block
+	{
+		width: 100%;
+	}
+
+	.block1
+	{
+		background-color: blue;
+	}
+	
+	.block2
+
+	{
+		background-color:purple;
+	}
+
+	.block3
+	{
+		background-color:grey;
+		display: flex;
+	}
+	.block4
+	{
+		background-color:brown;
+		display:flex;
+	}
+}
+  

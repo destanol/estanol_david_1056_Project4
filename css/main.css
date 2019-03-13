@@ -8,9 +8,10 @@
 
 /* At mobile size (remember mobile first)
 - The columns should stack and be full width.
-- Columns 3 and 4 should be hidden
 - Column 1 should be pink
-- Column 2 be red */
+- Column 2 be red 
+- Columns 3 and 4 should be hidden
+*/
 
 #container
 {
